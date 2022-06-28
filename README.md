@@ -109,9 +109,9 @@ For example, downloading Tower of God, Chapter 150 would result in the following
     $ python webtoon_downloader.py [url] --dest ./path/to/parent/folder/of/downloaded/images
     ```
 
-* The downloaded images of the chapters are by default all located in the ```[dest]```, however these images can be seperated into seperate directories by providing the ```--seperate``` argument, where each directory corresponds to a downloaded chapter.
+* The downloaded images of the chapters are by default all located in the ```[dest]```, however these images can be separated into separate directories by providing the ```--separate``` argument, where each directory corresponds to a downloaded chapter.
     ```ps
-    $ python webtoon_downloader.py [url] --seperate
+    $ python webtoon_downloader.py [url] --separate
     ```
   For example, downloading Tower of God, Chapter 150 to 152 would result in the following:
     ```ps  
@@ -132,6 +132,12 @@ For example, downloading Tower of God, Chapter 150 would result in the following
             │--152_003.jpg
             │...
     ```
+
+* When downloading images into separate directories, the individual directories can additionally be compressed into .cbz files by providing the ```--cbz``` argument.
+    ```ps
+    $ python webtoon_downloader.py [url] --separate --cbz
+    ```
+    > NOTE: The ```--cbz``` argument only works when the ```--separate``` argument is also provided.
 
 For more details on positional arguments, please use the ```-h ``` or ```--help``` argument:
 ```console
